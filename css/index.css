@@ -1,0 +1,305 @@
+body {
+	margin: 0 auto;
+	overflow-x: hidden; 
+}
+
+nav {
+	position: fixed;
+	margin-top: 0;
+	width: 100%;
+	height: 70px;
+	background-color: rgb(112, 112, 112);
+	z-index: 2;
+}
+
+nav .logo-text {
+	color: white;
+	text-align: left;
+	margin-top: 15px;
+	margin-left: 10%;
+	font-weight: 300;
+	display: inline-block;
+}
+
+
+#scroll-to-top {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	bottom: 20px;
+	float: right;
+	right: 20px;
+	display: none;
+	visibility: hidden;
+	color: white;
+	text-align: center;
+}
+
+#scroll-to-top .fa {
+	margin-top: 1px;
+	margin-left: 0;
+	float: center;
+	color: white;
+}
+.decorative-sep {
+	color: rgb(231, 231, 231);
+	background-color: rgb(231, 231, 231);
+	height: 2px;
+	width: 250px;
+	float: left;
+	margin-top: 110px;
+	display: block;
+	visibility: visible;
+}
+
+.main-image img{
+	height: 100vh;
+	width: 100vw;
+}
+
+.main-image h1 {
+	width: 100vw;
+	position: absolute;
+	top: 45vh;
+	color: white;
+	font-style: "Open Sans";
+	font-weight: 400;
+	text-align: center;
+}
+
+.main-image .fa-angle-down {
+	color: white;
+	top: 100vh;
+	position: absolute;
+	left: 28.5vw;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+
+.main-image .fa-angle-down:hover {
+	color: rgb(212, 212, 212);
+	border: 1px solid rgb(212, 212, 212);
+} 
+
+.gray-col {
+	background-color: rgb(248, 248, 248);
+	height: 500px;
+	width: 100vw;
+	border: none;
+	border-bottom: thin solid rgb(231, 231, 231);
+}
+
+.gray-col .decorative-sep  {
+	margin-left: 80px;
+}
+
+.white-col {
+	background-color: white;
+	height: 500px;
+	width: 100vw;
+	border: none;
+	border-bottom: thin solid rgb(231, 231, 231);
+}
+
+.image-container-w {
+	width: 60vw;
+	height: inherit;
+	float: left;
+	font-size: 300px;
+}
+
+.image-container-g {
+	width: 60vw;
+	height: inherit;
+	float: right;
+	font-size: 300px;
+}
+
+.image-container-g img {
+	height: 100%;
+	max-height: 90%;
+	max-width: 90%;
+	margin-right: 20px;
+	float: right;
+	margin-top: 20px;
+
+}
+
+.image-container-w img {
+	height: 100%;
+	max-height: 90%;
+	max-width: 90%;
+	margin-left: 20px;
+
+}
+
+.text-container-g {
+	width: 40vw;
+	height: inherit;
+	float: left;
+}
+
+.text-container-g .title-g {
+	text-align: left;
+	margin-top: 140px;
+	margin-left: 80px;
+	font-style: "Open Sans";
+	font-weight: 400;
+	font-size: 1.4em;
+}
+
+.text-container-w .title-w {
+	text-align: left;
+	margin-top: 140px;
+	margin-right: 80px;
+	font-style: "Open Sans";
+	font-weight: 400;
+	font-size: 1.4em;
+}
+
+.description-g {
+	margin-left: 80px;
+	margin-top: 20px;
+	font-size: 1.4em;
+	font-style: "Open Sans";
+	font-weight: 300;
+}
+
+.description-w {
+	margin-top: 20px;
+	margin-right: 80px;
+	font-size: 1.4em;
+	font-style: "Open Sans";
+	font-weight: 300;
+}
+
+.text-container-w {
+	width: 40vw;
+	height: inherit;
+	float: right;
+}
+
+i {
+	margin-top: -120px;
+	margin-left: 20%;
+}
+
+footer {
+	height: 200px;
+	width: 100vw;
+	background-color: white;
+}
+
+@media screen and (max-width: 1050px) {
+	.image-container-g img {
+		max-width: 420px;
+		max-height: 420px;
+	}
+
+	.image-container-w img {
+		max-width: 420px;
+		max-height: 420px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.white-col {
+		height: 600px;
+	}
+
+	.gray-col {
+		height: 600px;
+	}
+
+	i {
+		margin-left: 0;
+		margin-top: 40px;
+	}
+
+	.image-container-g  {
+		margin-top: 0;
+		width: 100vw;
+		height: 50%;
+		text-align: center;
+		font-size: 200px;
+	}
+
+	.image-container-w {
+		margin-top: 0;
+		width: 100vw;
+		height: 50%;
+		text-align: center;
+		font-size: 200px
+	}
+
+	.image-container-g img {
+		float: center;
+		margin-top: 0px;
+	}
+
+	.image-container-w img {
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.text-container-g {
+		margin-bottom: 0;
+		width: 100vw;
+		height: 50%;
+	}
+
+	.text-container-w {
+		margin-bottom: 0;
+		width: 100vw;
+		height: 50%;
+
+	}
+
+	.text-container-g .title-g {
+		float: center;
+		text-align: center;
+		margin-top: 45px;
+		margin-left: 0;
+	}
+
+	.text-container-w .title-w {
+		float: center;
+		text-align: center;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 45px;
+	}
+
+	.description-g {
+		margin-top: 0;
+		float: center;
+		text-align: center;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.description-w {
+		margin-top: 0;
+		text-align: center;
+		float: center;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.decorative-sep {
+		display: none;
+		visibility: hidden;
+	}
+
+	.main-image .fa-angle-down {
+		color: white;
+		top: 80vh;
+		position: absolute;
+		left: 45vw;
+		border: 1px solid white;
+		border-radius: 50%;
+	}
+}
